@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Lexend Deca',
+        sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.cantainer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 12px;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.orange { background: hsl(31, 77%, 52%); }
+
+.cyan { background: hsl(184, 100%, 22%); }
+
+.cyandark { background: hsl(179, 100%, 13%); }
+
+.card { padding: 40px; }
+
+.card h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 30px;
+}
+
+.card p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8;
+}
+
+.card button {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 13px 27px;
+    border-radius: 26px;
+    margin-top: 60px;
+    display: inline-block;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: all .4s ease-in-out;
+}
+
+.orange button { color: hsl(31, 77%, 52%); }
+
+.cyan button { color: hsl(184, 100%, 22%); }
+
+.cyandark button { color: hsl(179, 100%, 13%); }
+
+.card button:hover {
+    color: hsl(0, 0%, 95%);
+    background: transparent;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .cantainer-main { grid-template-columns: 1fr; }
+}
+
+@media only screen and (max-width: 425px) {
+    .cantainer-main { margin: 2rem .5rem; }
+}
